@@ -1,0 +1,37 @@
+/*
+https://codeforces.com/problemset/problem/231/A
+*/
+
+#include<iostream> 
+#include<string.h>
+using namespace std ;
+
+
+
+int main() {
+
+int count = 0,i,j,a,b,c,n;
+    cin>>n ;
+
+        for ( i = 0 ; i <n ; i++)
+        {
+         cin >> a >> b >> c ;
+            int sum= (a + b + c)  ;
+                
+                if (sum>=2) {
+                count++ ; }
+           
+        }
+
+ cout<< count ;
+}
+
+
+
+
+
+
+
+
+
+
