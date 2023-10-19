@@ -1,0 +1,40 @@
+/*
+https://codeforces.com/problemset/problem/1791/A
+*/
+
+
+#include<stdio.h>
+int main()
+{
+    int x;
+    int n;
+    char w;
+    char c,d,e,f,o,r;
+
+    scanf("%d",&x);
+ int flag=0;
+    while(x--)
+    {
+       
+        scanf(" %c",&w);
+        if(w=='c'||w=='o'||w=='d'||w=='e'||w=='f'||w=='o'||w=='r'||w=='s')
+        {
+           
+              printf("YES\n");
+
+        }
+        else{
+            printf("NO\n");
+        }
+
+        
+          
+
+
+    }
+    return 0;
+
+
+
+
+}
