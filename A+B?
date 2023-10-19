@@ -1,0 +1,25 @@
+/*
+https://codeforces.com/problemset/problem/1772/A
+*/
+
+#include<stdio.h>
+int main()
+{
+int n,a,b;
+char x;
+
+scanf("%d",&n);
+
+for(int I=1;I<=n;I++)
+{
+
+scanf("%d",&a);
+scanf(" %c",&x);
+scanf("%d",&b);
+
+printf("%d\n",a+b);
+
+}
+
+return 0;
+}
