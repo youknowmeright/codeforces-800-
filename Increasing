@@ -1,0 +1,51 @@
+/*
+https://codeforces.com/contest/1742/problem/B
+*/
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    int t;
+    int i, j, temp;
+    int arr[100];
+
+    scanf("%d", &t);
+    while (t--) {
+        scanf("%d", &n);
+
+        for (i = 0; i < n; i++) {
+            scanf("%d", &arr[i]);
+        }
+
+        int count = 0; // Initialize count for each test case
+
+        for (i = 0; i < n - 1; i++) {
+            for (j = i + 1; j < n; j++) {
+                if (arr[i] > arr[j]) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+
+        for (i = 0; i < n - 1; i++) {
+            if (arr[i + 1] > arr[i]) {
+                count++;
+            }
+        }
+
+        if (count == n - 1) {
+            printf("YES\n");
+        } else {
+            printf("NO\n");
+        }
+    }
+
+    return 0;
+}
