@@ -1,0 +1,38 @@
+/*
+https://codeforces.com/problemset/problem/158/A
+*/
+
+#include <stdio.h>
+
+int main() {
+    int n, a;
+    scanf("%d %d", &n, &a);
+
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+
+
+    int b = arr[a - 1];
+    int count = 0;
+
+                                                      // Count the number of participants who advance to the next round
+    for (int i = 0; i < n; i++) 
+    {
+        if (arr[i] >= b && arr[i] > 0)                //kth_place_score=b
+        {
+            count++;
+        }
+         else 
+         {
+            break;                               // Since the scores are non-increasing, there's no need to continue checking.
+       
+         }
+    }
+
+    printf("%d\n",count);
+    return 0;
+}
