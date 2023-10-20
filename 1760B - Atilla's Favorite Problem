@@ -1,0 +1,37 @@
+/*
+ https://codeforces.com/problemset/problem/1760/B
+*/
+
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+   int n;
+   int x;
+   string s;
+
+   cin>>n;
+
+   while(n--)
+   {
+    cin>>x;
+    cin>>s;
+    char c='a';
+
+    for(int i=0;i<x;i++)
+    {
+
+       if(s[i]>c)
+       c=s[i];
+
+
+    }
+    cout<<(int)c-96<<endl;
+
+
+
+   }
+
+   return 0;
+}
