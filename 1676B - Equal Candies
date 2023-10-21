@@ -1,0 +1,49 @@
+/*
+
+ https://codeforces.com/problemset/problem/1676/B  
+*/
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+
+
+// multiple testcase//
+int x;
+cin>>x;
+
+while(x--)
+{
+
+  // size of my input//
+  int a;
+  cin>>a;
+  int arr[5000];
+
+// taking my input (as per given size)//
+  for(int i=0;i<a;i++)
+  {
+    cin>>arr[i];
+  }
+
+//sorted my input
+
+sort (arr, arr + a);
+
+int sum=0;
+ for(int i=0;i<a;i++)
+  {
+    sum=sum+arr[i]-arr[0];
+  }
+
+
+
+cout<<sum<<endl;
+
+
+
+}
+
+return 0;
+}
