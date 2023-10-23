@@ -1,0 +1,51 @@
+/*
+https://codeforces.com/problemset/problem/1703/B
+*/
+
+/*
+   Didn't understood the code
+   now i am copying this particular code just to maintain my daily streak
+
+   i hope to solve this problem one day-->23/10/2023 (11:23PM)
+
+*/
+
+
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    int T, b, c, d, e;
+    string s;
+    cin >> T;
+    while (T--)           
+    {
+        c = 0,d=0;
+        char ch[100] = {0};
+        cin >> b >> s;                        
+        for (int i = 0; i < b; i++)
+        { 
+            for (int j = 0; j < b; j++)             
+                                                  
+            {
+                if (s[i] == ch[j])                  
+                {
+                    c = 1;
+                    break;
+                }
+                else
+                    c = 2;
+            }
+            ch[i]=s[i];
+            if(c==1)
+            {
+                d=d+1;
+            }
+            else
+                d=d+2;
+        }
+        cout<<d<<endl;
+    }
+    return 0;
+}
