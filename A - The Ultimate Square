@@ -1,0 +1,32 @@
+/*
+ https://codeforces.com/problemset/problem/1748/A
+*/
+
+#include<iostream>
+using namespace std;
+int main()
+{
+
+ int t;
+ cin>>t;
+ while(t--)
+ {
+
+  int x;
+  int a;
+
+  cin>>a;
+
+  x=(a+1)/2;
+
+  cout<<x<<endl;
+
+
+
+
+
+
+ }
+return 0;
+
+}
