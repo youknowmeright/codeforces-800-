@@ -1,0 +1,30 @@
+/*
+https://codeforces.com/contest/1790/problem/A
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b;
+    string s="314159265358979323846264338327";
+    cin>>t;
+    while(t--)
+    {
+        x=0;
+        
+        string ch;
+        cin>>ch;
+        int l=ch.length();
+        for(int i=0;i<l;i++)
+        {
+            if(s[i]==ch[i])
+            x++;
+            else
+            break;
+        }
+        cout<<x<<endl;
+    }
+    return 0;
+}
